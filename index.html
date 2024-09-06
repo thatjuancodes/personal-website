@@ -4,106 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Juan that Codes - I talk and consult about technology</title>
-
   <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-  <div class="section hero-section">
-    <svg width="100%" height="100%">
-      <rect class="g1-square red" x="45%" y="18%" width="40" height="40" />
-      <rect class="g1-square yellow" x="47%" y="20%" width="40" height="40" />
+  <main>
+    <section class="hero-section">
+      <svg width="100%" height="100%">
+        <rect class="g1-square red" x="45%" y="18%" width="40" height="40" />
+        <rect class="g1-square yellow" x="47%" y="20%" width="40" height="40" />
+        <circle class="g2-circle yellow" cx="50%" cy="25%" r="15" />
+        <circle class="g1-circle red" cx="55%" cy="20%" r="10" />
+        <polygon class="g2-triangle red" points="700,250 710,230 720,250" />
+        <polygon class="g1-triangle yellow" points="700,250 710,230 720,250" />
+      </svg>
 
-      <circle class="g2-circle yellow" cx="50%" cy="25%" r="15" />
-      <circle class="g1-circle red" cx="55%" cy="20%" r="10" />
+      <div class="profile">
+        <img src="profile.png" alt="Juan's profile picture">
+      </div>
+    
+      <h1 class="title yellow">Hi, I'm Juan <span>.codes</span></h1>
+    
+      <blockquote>I am a software engineer with 10+ years of experience</blockquote>
 
-      <polygon class="g2-triangle red" points="700,250 710,230 720,250" />
-      <polygon class="g1-triangle yellow" points="700,250 710,230 720,250" />
-    </svg>
+      <h3 class="mt-5">Want to Connect?</h3>
 
-    <div class="profile">
-      <img src="profile.png"/>
-    </div>
-  
-    <h1 class="title yellow">Hi, I'm Juan <span>.codes</span></h1>
-  
-    <quote>I am a software engineer with 10+ years of experience</quote>
+      <ul class="contacts-list centered-list">
+        <li><a href="https://www.linkedin.com/in/juanmiguelalvarezcodes/" target="_blank">Linkedin</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="https://github.com/thatjuancodes" target="_blank">Github</a></li>
+        <li><a href="#">Medium</a></li>
+      </ul>
+    </section>
 
-    <h3 class="mt-5">Want to Connect?</h3>
-
-    <ul class="contacts-list">
-      <li><a href="https://www.linkedin.com/in/juanmiguelalvarezcodes/" target="_blank">Linkedin</a></li>
-      <li><a href="#">Youtube</a></li>
-      <li><a href="#">Email</a></li>
-      <li><a href="https://github.com/thatjuancodes" target="_blank">Github</a></li>
-      <li><a href="#">Medium</a></li>
-    </ul>
-  </div>
-
-  <div class="section projects-section">
-    <h2 class="mt-5 title red">Projects I'm working on</h2>
-    <ul class="projects-list centered-list">
-      <li>
-        <a href="https://github.com/mens-rea/home-maker-ember">
-          <h4>Homemaker</h4>
-
-          <p>A home system to automate home management</p>
-
-          <span class="label">React</span>
-
-          <span class="label">Typescript</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://dapper-sprite-c27f31.netlify.app/" target="_blank">
-          <h4>Finance Simulator</h4>
-
-          <p>A simple webtool to model personal investments</p>
-
-          <span class="label">Ruby on Rails</span>
-
-          <span class="label">Next JS</span>
-
-          <span class="label">Hasura</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h4>Qout.R</h4>
-
-          <p>A simple webtool to generate business quotes more efficiently</p>
-
-          <span class="label">React</span>
-
-          <span class="label">Typescript</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h4>Hasura JSON to ERD Tool</h4>
-
-          <p>A python tool to generate an ERD from a Hasura json export</p>
-
-          <span class="label">Python</span>
-
-          <span class="label">Hasura Graphql</span>
-
-          <span class="label">JSON</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://dockeepr.com" target="_blank">
-          <h4>DocKeepr</h4>
-
-          <p>Convert document formats into editable and printable PDF documents</p>
-
-          <span class="label">HTML</span>
-
-          <span class="label">CSS</span>
-
-          <span class="label">Javascript</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+    <section class="projects-section">
+      <h2 class="mt-5 title red">Projects I'm working on</h2>
+      <ul class="projects-list centered-list">
+        <li>
+          <a href="https://github.com/mens-rea/home-maker-ember">
+            <h4>Homemaker</h4>
+            <p>A home system to automate home management</p>
+            <span class="label">React</span>
+            <span class="label">Typescript</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://dapper-sprite-c27f31.netlify.app/" target="_blank">
+            <h4>Finance Simulator</h4>
+            <p>A simple webtool to model personal investments</p>
+            <span class="label">Ruby on Rails</span>
+            <span class="label">Next JS</span>
+            <span class="label">Hasura</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>Qout.R</h4>
+            <p>A simple webtool to generate business quotes more efficiently</p>
+            <span class="label">React</span>
+            <span class="label">Typescript</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>Hasura JSON to ERD Tool</h4>
+            <p>A python tool to generate an ERD from a Hasura json export</p>
+            <span class="label">Python</span>
+            <span class="label">Hasura Graphql</span>
+            <span class="label">JSON</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://dockeepr.com" target="_blank">
+            <h4>DocKeepr</h4>
+            <p>Convert document formats into editable and printable PDF documents</p>
+            <span class="label">HTML</span>
+            <span class="label">CSS</span>
+            <span class="label">Javascript</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
