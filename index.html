@@ -8,102 +8,115 @@
   <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-  <div class="section hero-section">
-    <svg width="100%" height="100%">
-      <rect class="g1-square red" x="45%" y="18%" width="40" height="40" />
-      <rect class="g1-square yellow" x="47%" y="20%" width="40" height="40" />
-
-      <circle class="g2-circle yellow" cx="50%" cy="25%" r="15" />
-      <circle class="g1-circle red" cx="55%" cy="20%" r="10" />
-
-      <polygon class="g2-triangle red" points="700,250 710,230 720,250" />
-      <polygon class="g1-triangle yellow" points="700,250 710,230 720,250" />
-    </svg>
-
-    <div class="profile">
-      <img src="profile.png"/>
-    </div>
+  <div class="scroll-container">
+    <section class="section hero-section">
+      <svg width="100%" height="100%">
+        <rect class="g1-square red" x="45%" y="18%" width="40" height="40" />
+        <rect class="g1-square yellow" x="47%" y="20%" width="40" height="40" />
   
-    <h1 class="title yellow">Hi, I'm Juan <span>.codes</span></h1>
+        <circle class="g2-circle yellow" cx="50%" cy="25%" r="15" />
+        <circle class="g1-circle red" cx="55%" cy="20%" r="10" />
   
-    <quote>I am a full-stack software engineer with 10+ years of experience</quote>
-
-    <h3 class="mt-5">Want to Connect?</h3>
-
-    <ul class="contacts-list">
-      <li><a href="https://www.linkedin.com/in/juanmiguelalvarezcodes/" target="_blank">Linkedin</a></li>
-      <li><a href="#">Youtube</a></li>
-      <li><a href="#">Email</a></li>
-      <li><a href="https://github.com/thatjuancodes" target="_blank">Github</a></li>
-      <li><a href="#">Medium</a></li>
-    </ul>
+        <polygon class="g2-triangle red" points="700,250 710,230 720,250" />
+        <polygon class="g1-triangle yellow" points="700,250 710,230 720,250" />
+      </svg>
+  
+      <div class="profile">
+        <img src="profile.png"/>
+      </div>
+    
+      <h1 class="title yellow">Hi, I'm Juan <span>.codes</span></h1>
+    
+      <quote>I am a full-stack software engineer with 10+ years of experience</quote>
+  
+      <h3 class="mt-5">Want to Connect?</h3>
+  
+      <ul class="contacts-list">
+        <li><a href="https://www.linkedin.com/in/juanmiguelalvarezcodes/" target="_blank">Linkedin</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="https://github.com/thatjuancodes" target="_blank">Github</a></li>
+        <li><a href="#">Medium</a></li>
+      </ul>
+    </section>
+  
+    <section class="section projects-section">
+      <h2 class="mt-5 title red">Projects I'm working on</h2>
+      <ul class="projects-list centered-list">
+        <li>
+          <a href="https://github.com/mens-rea/home-maker-ember">
+            <h4>Homemaker</h4>
+            <p>A home system to automate home management</p>
+            <span class="label">React</span>
+            <span class="label">Typescript</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://dapper-sprite-c27f31.netlify.app/" target="_blank">
+            <h4>Finance Simulator</h4>
+            <p>A simple webtool to model personal investments</p>
+            <span class="label">Ruby on Rails</span>
+            <span class="label">Next JS</span>
+            <span class="label">Hasura</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>Qout.R</h4>
+            <p>A simple webtool to generate business quotes more efficiently</p>
+            <span class="label">React</span>
+            <span class="label">Typescript</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h4>Hasura JSON to ERD Tool</h4>
+            <p>A python tool to generate an ERD from a Hasura json export</p>
+            <span class="label">Python</span>
+            <span class="label">Hasura Graphql</span>
+            <span class="label">JSON</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://dockeepr.com" target="_blank">
+            <h4>DocKeepr</h4>
+            <p>Convert document formats into editable and printable PDF documents</p>
+            <span class="label">HTML</span>
+            <span class="label">CSS</span>
+            <span class="label">Javascript</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section class="section testimonials-section">
+      <h2 class="title blue">What My Colleagues Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide">
+          <blockquote>"JM was an excellent software engineer for Fortcode. He helped expand the startup ideas for Fortcode and developed the mobile app and its APIs. Most of all, he is a very charismatic speaker where he can clearly communicate his thoughts to everyone in the room with ease and confidence."</blockquote>
+          <p class="author">- Kenneth Bastian, CTO/Founder of Fortcode Inc.</p>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"JM was a fantastic team lead for an outsourced engineering team. He communicated clearly between the team and product to ensure that each task was understood and completed within each sprint. JM thought through each issue or feature and asked great clarifying questions that would help his team complete their work in a timely manner. In the event that there was a need for urgent fixes or an extra hand on projects, JM was first to dive in and go the extra mile to ensure that our customers were taken care of. He has a true passion for building and maintaining a product to help customers. He puts in extra effort to truly understand how each feature or bug affects a customer. I enjoyed working with JM and appreciated his strong communication and time management skills."</blockquote>
+          <p class="author">- Samantha Lawson, Project Manager at AgencyMVP</p>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"JM is an excellent engineer and a fantastic team leader and mentor. I could always count on him to keep things running smoothly, whether that was through helping on project management and design, assisting other developers to help them with their tasks, or by rolling up his sleeves and pitching in to get tasks finished. He always asks the right questions and finds a way to deliver a solution. It was a pleasure working with him."</blockquote>
+          <p class="author">- Stephen Weil, CTO at AgencyMVP</p>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"I had the opportunity to work with JM when we worked in the same team at Fortcode, Inc. He's a passionate developer with an exceptional understanding of modern technologies. He's also a natural leader who knows how to bring the best out of his teammates. Whenever our team encountered an issue, he always had a number of smart ideas lined up to resolve it. 
+            I'd say it's quite rare to find a person with JM's level of dedication and positive energy. Any developer would be more than lucky to have him as a teammate."</blockquote>
+          <p class="author">- Rio Sevilla, Frontend Developer at Fortcode Inc.</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+      </div>
+    </section>
   </div>
 
-  <div class="section projects-section">
-    <h2 class="mt-5 title red">Projects I'm working on</h2>
-    <ul class="projects-list centered-list">
-      <li>
-        <a href="https://github.com/mens-rea/home-maker-ember">
-          <h4>Homemaker</h4>
-
-          <p>A home system to automate home management</p>
-
-          <span class="label">React</span>
-
-          <span class="label">Typescript</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://dapper-sprite-c27f31.netlify.app/" target="_blank">
-          <h4>Finance Simulator</h4>
-
-          <p>A simple webtool to model personal investments</p>
-
-          <span class="label">Ruby on Rails</span>
-
-          <span class="label">Next JS</span>
-
-          <span class="label">Hasura</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h4>Qout.R</h4>
-
-          <p>A simple webtool to generate business quotes more efficiently</p>
-
-          <span class="label">React</span>
-
-          <span class="label">Typescript</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <h4>Hasura JSON to ERD Tool</h4>
-
-          <p>A python tool to generate an ERD from a Hasura json export</p>
-
-          <span class="label">Python</span>
-
-          <span class="label">Hasura Graphql</span>
-
-          <span class="label">JSON</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://dockeepr.com" target="_blank">
-          <h4>DocKeepr</h4>
-
-          <p>Convert document formats into editable and printable PDF documents</p>
-
-          <span class="label">HTML</span>
-
-          <span class="label">CSS</span>
-
-          <span class="label">Javascript</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <script src="main.js"></script>
 </body>
 </html>
