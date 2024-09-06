@@ -5,13 +5,29 @@
   text-align: center;
 }
 
-html {
-  scroll-snap-type: y mandatory;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
   background-color: #f5f5f5;
-  margin: 0;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Layout */
+.section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 20vh;
 }
 
 /* Typography */
@@ -142,6 +158,56 @@ quote::before, quote::after {
 .projects-list li a p {
   font-size: 14pt;
   max-width: 20vw;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 2rem 0;
+}
+
+.testimonial-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-slide blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-slide .author {
+  font-weight: bold;
+}
+
+.slider-controls {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slider-controls button {
+  background-color: #264DFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.slider-controls button:hover {
+  background-color: #1a3bcc;
 }
 
 /* SVG Animations */
