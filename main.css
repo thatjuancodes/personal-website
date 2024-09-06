@@ -253,7 +253,7 @@ svg .g2-triangle {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .hero-section {
     height: 100vh;
     padding-top: 10vh;
@@ -275,15 +275,17 @@ svg .g2-triangle {
 
   .projects-section .title {
     margin: 1rem 0;
+    width: 100%;
   }
 
   .projects-section .projects-list li  {
     float: none;
     display: inline-block;
+    width: 80%;
   }
 
   .projects-section .projects-list li a {
-    width: 70vw;
+    width: 80%;
     padding: 2rem;
   }
 
