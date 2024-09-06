@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   font-family: 'Helvetica', sans-serif;
   color: #2e2e2e;
@@ -13,50 +14,16 @@ body {
   margin: 0;
 }
 
-.mt-5 {
-  margin-top: 5rem;
-}
-
-.yellow {
-  color: #FFC40C;
-}
-
-.red {
-  color: #FF002C;
-}
-
-.blue {
-  color: #264DFF;
-}
-
-h1 {
-  font-size: 50pt;
-}
-
-h2 {
-  font-size: 36pt;
-}
-
-h3 {
-  font-size: 24pt;
-}
-
-h4 {
-  font-size: 18pt;
-}
-
-p {
-  font-size: 16pt;
-}
+/* Typography */
+h1 { font-size: 50pt; }
+h2 { font-size: 36pt; }
+h3 { font-size: 24pt; }
+h4 { font-size: 18pt; }
+p { font-size: 16pt; }
 
 a {
   color: #264DFF;
   text-decoration: none;
-}
-
-ul  {
-  margin: 0 auto;
-  width: fit-content;
 }
 
 quote {
@@ -68,26 +35,18 @@ quote::before, quote::after {
   content: '"';
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
+/* Utility Classes */
+.mt-5 { margin-top: 5rem; }
+.yellow { color: #FFC40C; }
+.red { color: #FF002C; }
+.blue { color: #264DFF; }
 
+/* Layout */
 .section {
   scroll-snap-align: start;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 20vh;
-}
-
-.label {
-  background-color: #264DFF;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 12px;
-  width: fit-content;
 }
 
 .centered-list {
@@ -102,9 +61,15 @@ ul {
   margin: 0 10px;
 }
 
-.hero-section {
-  position: relative;
-  padding-top: 10vh;
+/* Components */
+.label {
+  background-color: #264DFF;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 12px;
+  width: fit-content;
 }
 
 .profile {
@@ -118,15 +83,14 @@ ul {
 }
 
 .profile img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .title {
   position: relative;
   width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem;
   letter-spacing: 0.1rem;
 }
 
@@ -138,6 +102,12 @@ ul {
   position: absolute;
   bottom: -30px;
   right: 5px;
+}
+
+/* Specific Sections */
+.hero-section {
+  position: relative;
+  padding-top: 10vh;
 }
 
 .contacts-list li {
@@ -174,7 +144,7 @@ ul {
   max-width: 20vw;
 }
 
-/** SVG ANIMATIONS **/
+/* SVG Animations */
 svg {
   position: absolute;
   top: 0;
@@ -187,7 +157,7 @@ svg {
 svg .red {
   stroke: #FF002C;
   stroke-width: 4px;
-  fill: transparent
+  fill: transparent;
 }
 
 svg .yellow {
@@ -196,30 +166,8 @@ svg .yellow {
   fill: transparent;
 }
 
-svg .g1-square {
-  animation: steam-off-1 2.0s ease-out infinite;
-}
-
-svg .g2-square {
-  animation: steam-off-2 3.0s ease-out infinite;
-  
-}
-
-svg .g1-circle {
-  animation: steam-off-1 2.5s ease-out infinite;
-}
-
-svg .g2-circle {
-  animation: steam-off-2 2.3s ease-out infinite;
-}
-
-svg .g1-triangle {
-  animation: steam-off-1 2.5s ease-out infinite;
-}
-
-svg .g2-triangle {
-  animation: steam-off-2 2.5s ease-out infinite;
-}
+svg [class^="g1-"] { animation: steam-off-1 2.5s ease-out infinite; }
+svg [class^="g2-"] { animation: steam-off-2 2.5s ease-out infinite; }
 
 @keyframes steam-off-1 {
   0% {
@@ -227,7 +175,6 @@ svg .g2-triangle {
     height: 40px;
     opacity: 1;
   }
-
   100% {
     width: 10px;
     height: 10px;
@@ -243,7 +190,6 @@ svg .g2-triangle {
     height: 40px;
     opacity: 1;
   }
-
   100% {
     width: 5px;
     height: 5px;
@@ -253,15 +199,11 @@ svg .g2-triangle {
   }
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .hero-section {
     height: 100vh;
-    padding-top: 10vh;
     padding: 10vh 1rem;
-  }
-
-  .hero-section .profile {
-    margin-top: 0vh;
   }
 
   .title {
@@ -278,7 +220,7 @@ svg .g2-triangle {
     width: 100%;
   }
 
-  .projects-section .projects-list li  {
+  .projects-section .projects-list li {
     float: none;
     display: inline-block;
     width: 80%;
