@@ -165,6 +165,10 @@ quote::before, quote::after {
   padding: 2rem 0;
 }
 
+.testimonials-section .title {
+  margin-top: 5rem; /* Adjust this value as needed */
+}
+
 .testimonial-slider {
   max-width: 800px;
   margin: 0 auto;
